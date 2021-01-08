@@ -1,2 +1,2 @@
 # mimkitty.github.io
-![chiiheart](https://imgur.com/eqm0BxA)
+![chiiheart](https://i.imgur.com/eqm0BxA.png)
