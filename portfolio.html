@@ -2,19 +2,33 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <style>
-        @font-face {
-            font-family: VT323;
-            src: url(fonts/VT323.ttf);
-        }
+
+
 
         body {
-            background-image: url(photos/bg.png);
+            background-image: url(https://i.imgur.com/79zZr63.png);
             background-size: 183px;
-            cursor: url(photos/hrtcursor.png), progress;
-            font-family: VT323;
-            color: #ffe1e7;
+            cursor: url(http://www.rw-designer.com/cursor-extern.php?id=108553),progress;
+            color: #FFC9D8;
+            padding: 0;
+            margin: 0;
+            font-family: Verdana;
+
+        }
+
+        h1 {
+            font-family: 'VT323', monospace;
+            }
+            p {
+            font-family: Verdana;
+            font-size: 10px;
+        }
+
+        img {
+            pointer-events: none;
         }
 
         a {
@@ -22,11 +36,17 @@
             color: #fff;
         }
 
-            a:hover {
-                text-decoration: underline;
-                text-decoration-style: dotted;
-                color: #faf4e8;
-            }
+        p:hover {
+            cursor: url(), progress;
+            cursor: url(http://www.rw-designer.com/cursor-extern.php?id=108558), progress;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            color: #fff0f3;
+            cursor: url(http://www.rw-designer.com/cursor-extern.php?id=108567), progress;
+        }
 
         #window {
             position: relative;
@@ -50,8 +70,10 @@
 
         #nav {
             position: absolute;
-            left: 45%;
+            left: 43%;
             top: 10%;
+            z-index: 100;
+            font-family: 'VT323', monospace;
         }
 
         #cr {
@@ -60,6 +82,8 @@
             left: 50%;
             color: #c3afa3;
             text-align: center;
+            font-family: Verdana;
+            font-size: 10px;
         }
         /* 935 x 540 */
         #mcontent {
@@ -67,10 +91,10 @@
             overflow-x: hidden;
             overflow-y: scroll;
             z-index: 6;
-            top: 15%;
+            top: 12%;
             left: 17%;
             width: 800px;
-            height: 400px;
+            height: 440px;
             text-align: center;
             padding: 20px 40px 20px 50px;
         }
@@ -81,7 +105,7 @@
 
         /* Track */
         ::-webkit-scrollbar-track {
-            background: #faf4e8;
+            background: #fff;
         }
 
         /* Handle */
@@ -104,7 +128,22 @@
             padding: 5px;
         }
     </style>
-    <link rel="shortcut icon" href="photos/favicon.png">
+    <script type="text/javascript">
+
+        function nocontext(e) {
+            var clickedTag = (e == null) ? event.srcElement.tagName : e.target.tagName;
+            if (clickedTag == "IMG") {
+                //   alert(alertMsg);
+                return false;
+            }
+        }
+        //  var alertMsg = "Image context menu is disabled";
+        document.oncontextmenu = nocontext;
+
+            //]]>
+
+    </script>
+    <link rel="shortcut icon" href="https://i.imgur.com/DnQYYpL.png">
     <meta charset="utf-8" />
     <meta name="description" content=". . .">
     <meta name="keywords" content="soft aesthetic, mimkitty">
@@ -116,33 +155,19 @@
 
     <img id="window" src="photos/mCwindow.png" align="middle" />
     <div id="nav">
+        <a href="index.html" class="button">home</a>
         <a href="portfolio.html" class="button">portfolio</a>
         <a href="mimmy.html" class="button">about</a>
-        <a href="blog.html" class="button">blog</a>
+        <a href="diary.html" class="button">diary</a>
     </div>
     <div id="mcontent">
-        <div id="blurb">
-            <img src="photos/blurb.png" width="80%" />
-            <!-- 240 x 320 -->
-            <div id="blurbContent">
-                hello, this is a test...
-            </div>
 
-        </div>
-        hello...<br />this is a test<br />i'm trying to set up a very, very cute webpage </br>with a very, very cute scrollbar'<br />sdfsdfsdfsdfsdfsdfsdfsdf<br />sdfsdsdgsdgsdgsdgsdgsdgsdgsdgsgsdg<br />
-        <img src="photos/chiHeart.png" align="middle" width="25%" />
-        <br />
-        i'm mimmy & i love u sososo much,, <br /> i think m gonna add a little,,, thing here,, <br />
-        how do i make an emoji or an icon in css?? we will find out !!<img src="photos/mimAtashii.png" width="2%" />
-        <br />
-        i've found out how to !! make a cute blushy highlight !!
-        <br />
-        m very happy !! <br />
-        <video align="center" width="320" height="240" controls>
-            <source src="videos/kittynibblesSHORT.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
 
+
+        <a href="https://mimmy.itch.io/rainy-day-with-teddy"><img src="https://i.imgur.com/g7OJhUo.png" width="30%" /></a><br />
+        <p>
+            ꒰ rainy day with teddy ♡ game ꒱
+        </p>
 
     </div>
     <div id="cr">

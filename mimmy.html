@@ -2,19 +2,30 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <style>
-        @font-face {
-            font-family: VT323;
-            src: url(fonts/VT323.ttf);
-        }
 
         body {
-            background-image: url(photos/bg.png);
+            background-image: url(https://i.imgur.com/79zZr63.png);
             background-size: 183px;
-            cursor: url(photos/hrtcursor.png), progress;
-            font-family: VT323;
-            color: #ffe1e7;
+            cursor: url(http://www.rw-designer.com/cursor-extern.php?id=108553),progress;
+            color: #FFC9D8;
+            padding: 0;
+            margin: 0;
+            font-family: Verdana;
+
+        }
+        h1 {
+            font-family: 'VT323', monospace;
+        }
+        p {
+            font-family: Verdana;
+            font-size: 10px;
+        }
+
+        img {
+            pointer-events: none;
         }
 
         a {
@@ -22,11 +33,17 @@
             color: #fff;
         }
 
-            a:hover {
-                text-decoration: underline;
-                text-decoration-style: dotted;
-                color: #faf4e8;
-            }
+        p:hover {
+            cursor: url(), progress;
+            cursor: url(http://www.rw-designer.com/cursor-extern.php?id=108558), progress;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            color: #fff0f3;
+            cursor: url(http://www.rw-designer.com/cursor-extern.php?id=108567), progress;
+        }
 
         #window {
             position: relative;
@@ -36,22 +53,12 @@
             width: 75%;
         }
 
-        #blurb {
-            position: absolute;
-        }
-
-        #blurbContent {
-            color: #c3afa3;
-            position: absolute;
-            bottom: 150px;
-            left: 68px;
-            width: 100px;
-        }
-
         #nav {
             position: absolute;
-            left: 45%;
+            left: 43%;
             top: 10%;
+            z-index: 100;
+            font-family: 'VT323', monospace;
         }
 
         #cr {
@@ -60,6 +67,8 @@
             left: 50%;
             color: #c3afa3;
             text-align: center;
+            font-family: Verdana;
+            font-size: 10px;
         }
         /* 935 x 540 */
         #mcontent {
@@ -67,12 +76,23 @@
             overflow-x: hidden;
             overflow-y: scroll;
             z-index: 6;
-            top: 15%;
+            top: 12%;
             left: 17%;
             width: 800px;
-            height: 400px;
+            height: 440px;
             text-align: center;
             padding: 20px 40px 20px 50px;
+        }
+        #about {
+            background-color: #FDE8EC;
+            border: dotted 1px;
+            border-radius: 10px;
+            border-color: #c3afa3;
+            font-family: Verdana;
+            color: #c3afa3;
+            font-size: 10px;
+            padding: 4px;
+            line-height: 20px;
         }
         /* width */
         ::-webkit-scrollbar {
@@ -81,7 +101,7 @@
 
         /* Track */
         ::-webkit-scrollbar-track {
-            background: #faf4e8;
+            background: #fff;
         }
 
         /* Handle */
@@ -95,7 +115,7 @@
             }
 
         ::selection {
-            text-shadow: #ffe1e7 1px 0 10px;
+            text-shadow: #FFC9D8 1px 0 10px;
         }
 
         .button {
@@ -104,7 +124,22 @@
             padding: 5px;
         }
     </style>
-    <link rel="shortcut icon" href="photos/favicon.png">
+    <script type="text/javascript">
+
+        function nocontext(e) {
+            var clickedTag = (e == null) ? event.srcElement.tagName : e.target.tagName;
+            if (clickedTag == "IMG") {
+                //   alert(alertMsg);
+                return false;
+            }
+        }
+        //  var alertMsg = "Image context menu is disabled";
+        document.oncontextmenu = nocontext;
+
+            //]]>
+
+    </script>
+    <link rel="shortcut icon" href="https://i.imgur.com/DnQYYpL.png">
     <meta charset="utf-8" />
     <meta name="description" content=". . .">
     <meta name="keywords" content="soft aesthetic, mimkitty">
@@ -114,34 +149,39 @@
 </head>
 <body>
 
-    <img id="window" src="photos/mCwindow.png" align="middle" />
+    <img id="window" src="https://i.imgur.com/7uxGxhk.png" align="middle" />
     <div id="nav">
+        <a href="index.html" class="button">home</a>
         <a href="portfolio.html" class="button">portfolio</a>
         <a href="mimmy.html" class="button">about</a>
-        <a href="blog.html" class="button">blog</a>
+        <a href="diary.html" class="button">diary</a>
     </div>
     <div id="mcontent">
-        <div id="blurb">
-            <img src="photos/blurb.png" width="80%" />
-            <!-- 240 x 320 -->
-            <div id="blurbContent">
-                hello, this is a test...
-            </div>
+        <p>
+            ♡ january 30th
+            ♡ aquarius
+            ♡ infp <u style="text-decoration-style:dotted;">4w3</u> 6w7 (7w6?) 9w1
+            ♡ <br />
+            ♡ type 2 diabetic ♡ neuro<u style="text-decoration-style: dotted;">atypical</u> ♡
+
+        </p>
+        <div id="about">
+            my name is mimmy ! some other nicknames you can call me are mimi, mimkitty, mimmy lala, or mim !!
+            i am an american girl who is pursuing web design & game design (i am not quite where i want to be, but i will be !)
+            i like a lot of things !! i love kitties, strawbies, anime, the color pink . . . and lots more !!
+            i really love anime & manga !! my favorites so far are chobits, sweetness & lighting, n lucky star.  
+            <br /><br />
+            i have a few <a href="https://mimkitty.com/#char">characters i relate to</a> from media . . . if you click the link, i will show you two of them !!
+            relating to characters very strongly helps me work out parts of my identity or cope with various things, for me, i do it to cope and to have fun !!
+            <br /><br />
+            i also create affirmations, in subliminal audio, along with my web design and game design. 
+            <br /><br />
+            there's not much else i remember to write here, so i may update in the future. you can find updates on my github, my user name is mimkitty, 
+            or on the front page of this website. if you are interested in my thoughts, personality, feelings, and life, you can also check out my <a href="https://mimkitty.com/#diary">diary.</a>
+
+
 
         </div>
-        hello...<br />this is a test<br />i'm trying to set up a very, very cute webpage </br>with a very, very cute scrollbar'<br />sdfsdfsdfsdfsdfsdfsdfsdf<br />sdfsdsdgsdgsdgsdgsdgsdgsdgsdgsgsdg<br />
-        <img src="photos/chiHeart.png" align="middle" width="25%" />
-        <br />
-        i'm mimmy & i love u sososo much,, <br /> i think m gonna add a little,,, thing here,, <br />
-        how do i make an emoji or an icon in css?? we will find out !!<img src="photos/mimAtashii.png" width="2%" />
-        <br />
-        i've found out how to !! make a cute blushy highlight !!
-        <br />
-        m very happy !! <br />
-        <video align="center" width="320" height="240" controls>
-            <source src="videos/kittynibblesSHORT.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
 
 
     </div>

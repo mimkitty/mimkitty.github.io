@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -14,15 +15,13 @@
             color: #FFC9D8;
             padding: 0;
             margin: 0;
-            font-family: Verdana;
         }
 
         p {
             font-family: Verdana;
-            font-size:10px;
+            font-size: 10px;
         }
-     
-        
+
         h1 {
             font-family: 'VT323', monospace;
             font-weight: normal;
@@ -38,6 +37,7 @@
         }
 
         p:hover {
+            cursor: url(), progress;
             cursor: url(http://www.rw-designer.com/cursor-extern.php?id=108558), progress;
         }
 
@@ -55,21 +55,7 @@
             margin-right: auto;
             width: 75%;
         }
-        #smallwindow {
-            position:absolute;
-            width:25%;
-            left:70%;
-            bottom:20%;
-            z-index:100;
-        }
-        #smallcontent {
-            position: absolute;
-            color: #c3afa3;
-            z-index:101;
-            left:78%;
-            bottom:30%;
 
-        }
         table, th, td {
             border: 2px dotted #c3afa3;
             margin: auto;
@@ -77,22 +63,8 @@
             padding: 10px;
         }
 
-        #blurb {
-            position: absolute;
-            top: 100px;
-        }
 
-        #blurbContent {
-            color: #c3afa3;
-            position: absolute;
-            bottom: 75px;
-            left: 68px;
-            width: 100px;
-            font-family: 'VT323', monospace;
-        }
 
-      
-        
         #wordsBig {
             font-size: 12px;
         }
@@ -114,16 +86,19 @@
             font-family: Verdana;
             font-size: 10px;
         }
+        form {
+            font-family: 'VT323', monospace;
+        }
         /* 935 x 540 */
         #mcontent {
             position: absolute;
             overflow-x: hidden;
             overflow-y: scroll;
             z-index: 6;
-            top: 12%;
+            top: 13%;
             left: 17%;
             width: 800px;
-            height: 440px;
+            height: 439px;
             text-align: center;
             padding: 20px 40px 20px 50px;
         }
@@ -156,35 +131,36 @@
             background-color: #FFC9D8;
             padding: 5px;
         }
-        #status {
+        input {
             border: dotted 1px;
             border-radius: 10px;
             background-color: #fff0f3;
             border-color: #c3afa3;
             font-family: Verdana;
             color: #c3afa3;
-            font-size: 10px;
-            padding: 4px;
-            line-height: 20px;
         }
-      
+            input:hover {
+                cursor: url(), progress;
+                cursor: url(http://www.rw-designer.com/cursor-extern.php?id=108558), progress;
+            }
+          
     </style>
     <script type="text/javascript">
 
         function nocontext(e) {
             var clickedTag = (e == null) ? event.srcElement.tagName : e.target.tagName;
             if (clickedTag == "IMG") {
-             //   alert(alertMsg);
+                //   alert(alertMsg);
                 return false;
             }
         }
-      //  var alertMsg = "Image context menu is disabled";
+        //  var alertMsg = "Image context menu is disabled";
         document.oncontextmenu = nocontext;
 
-        //]]>
+            //]]>
 
     </script>
-    <link rel="shortcut icon" href="https://i.imgur.com/DnQYYpL.png">
+    <link rel="shortcut icon" href="photos/favicon.png">
     <meta charset="utf-8" />
     <meta name="description" content=". . .">
     <meta name="keywords" content="soft aesthetic, mimkitty">
@@ -202,65 +178,27 @@
         <a href="mimmy.html" class="button">about</a>
         <a href="diary.html" class="button">diary</a>
     </div>
-    <img id="smallwindow" src="https://i.imgur.com/ivlzIt1.png"/>
-    <div id="smallcontent">
-       
-        <div id="status">
-            <u style="text-decoration-style:dotted;"> status :</u>   too many eggs <br />
-            <u style="text-decoration-style:dotted;">working on :</u>   website <br />
-            <u style="text-decoration-style:dotted;"> last update :</u> all pages  <br />
-            <u style="text-decoration-style:dotted;"> online</u>
-        </div>  <br />
-<p>my button :</p>
-        <a href="https://mimkitty.com"><img src="https://i.imgur.com/s9RlO3L.gif" /></a>
-        
-
-    </div>    
     <div id="mcontent">
-        <div id="blurb">
-            <img src="https://i.imgur.com/pqjEhT8.png" width="80%" />
-            <!-- 240 x 320 -->
-            <div id="blurbContent">
-                <a href="https://www.youtube.com/channel/UCiKWZy52fU_zM6PlkWhiagg">yt</a> <a href="https://instagram.com/mimkitten">insta</a>
-                <br />
-                <a href="https://mimmy.itch.io">itch</a> <a href="contact.html">contact</a>
-                <br />
-                <a href="https://patreon.com/mimmy">patreon</a> <a href="https://paypal.me/mfannis">tip jar</a>
-                <br /> <br />
-                       <p>my inspiration :</p> 
-                <a href="https://middlepot.com"><img src="https://middlepot.com/button.png"></a>
-                <br /><br />
-               
-
-            </div>
-
-
-        </div>
-      
         
-        <div id="wordsBig">
-            <p>
-                welcome to my virtual blankie fort . . .
-                ♡
-
-                <br />
-                here you will see my dreams . . . my wishes . . .
-                ♡ <br />
-                and my attempts to fulfill them . . .
-                ♡ <br />
-                enter the fort . . . under the quilt . . .
-                ♡ <br />
-                and explore !
-            </p>
-            
-            <img src="https://i.imgur.com/EZR5bTL.png" width="40%" />
-            <p>my purpose for creating is to express myself <br />
-            and heal . . . i wish to bring healing, loving energy into the world <br />
-            with what i create . . . to soothe others and myself . . . <br />
-            to bring comfort and love to everyone . . . <br /></p>
-        </div>
-    </div>
+            <form action="mailto:mimmytunes@gmail.com" method="post" enctype="text/plain">
+                Name:<br>
+                <input type="text" name="name"><br><br />
+                E-mail:<br>
+                <input type="text" name="mail"><br><br />
+                Comment:<br>
+                <input type="text" name="comment" size="50"><br><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+       
+        </form>
    
+
+
+
+    </div>
+
+
+
     <div id="cr">
         mimmy . . . 2020
     </div>
