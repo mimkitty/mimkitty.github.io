@@ -2,9 +2,40 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <!-- edited by ഒ pooftie, https://middlepot.com -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <style>
+    
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+        /* this is important for keeping the font size on all screen sizes !! */
+
+        @media screen and (max-width: 1000px) and (orientation: portrait) {
+            #container {
+                position: absolute;
+                zoom: 55%;
+                left: 640px;
+                top: -180px;
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+        }
+
+        @media screen and (max-width: 1000px) and (orientation: landscape) {
+            #container {
+                position: absolute;
+                zoom: 57%;
+                left: -190px;
+                top: 10px;
+            }
+        }
 
         body {
             background-image: url(https://i.imgur.com/79zZr63.png);
@@ -13,18 +44,29 @@
             padding: 0;
             margin: 0;
             font-family: Verdana;
-
         }
+
         h1 {
             font-family: 'VT323', monospace;
         }
+
         p {
             font-family: Verdana;
             font-size: 10px;
         }
 
         img {
-            pointer-events: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
         }
 
         a {
@@ -33,54 +75,55 @@
         }
 
         p:hover {
-           
         }
 
         a:hover {
             text-decoration: underline;
             text-decoration-style: dotted;
             color: #fff0f3;
-            
         }
 
         #window {
-            position: relative;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 75%;
+            position: absolute;
+            margin-left: 170px;
+            width: 1025px;
         }
 
         #nav {
             position: absolute;
-            left: 43%;
-            top: 10%;
+            width: 500px;
+            left: 582px;
+            top: 70px;
             z-index: 100;
             font-family: 'VT323', monospace;
         }
 
         #cr {
-            margin: auto;
-            top: 50%;
-            left: 50%;
+            position: absolute;
+            width: 200px;
+            top: 590px;
+            left: 580px;
             color: #c3afa3;
             text-align: center;
             font-family: Verdana;
             font-size: 10px;
         }
-        /* 935 x 540 */
+
         #mcontent {
             position: absolute;
             overflow-x: hidden;
             overflow-y: scroll;
+            overflow: auto;
+            overflow: scroll;
             z-index: 6;
-            top: 12%;
-            left: 17%;
+            top: 84px;
+            left: 232px;
             width: 800px;
             height: 440px;
             text-align: center;
             padding: 20px 40px 20px 50px;
         }
+
         #about {
             background-color: #FDE8EC;
             border: dotted 1px;
@@ -92,22 +135,22 @@
             padding: 4px;
             line-height: 20px;
         }
-        /* width */
+      
         ::-webkit-scrollbar {
             width: 4px;
         }
 
-        /* Track */
+      
         ::-webkit-scrollbar-track {
             background: #fff;
         }
 
-        /* Handle */
+        
         ::-webkit-scrollbar-thumb {
             background: #ffe1e7;
         }
 
-            /* Handle on hover */
+            
             ::-webkit-scrollbar-thumb:hover {
                 background: #fde8ec;
             }
@@ -123,18 +166,18 @@
         }
     </style>
     <script type="text/javascript">
-
+        console.log('Hello world');
         function nocontext(e) {
             var clickedTag = (e == null) ? event.srcElement.tagName : e.target.tagName;
             if (clickedTag == "IMG") {
-                //   alert(alertMsg);
+           
                 return false;
             }
         }
-        //  var alertMsg = "Image context menu is disabled";
+       
         document.oncontextmenu = nocontext;
 
-            //]]>
+               
 
     </script>
     <link rel="shortcut icon" href="https://i.imgur.com/DnQYYpL.png">
@@ -146,7 +189,7 @@
     <title>꒰♡. . . lalala </title>
 </head>
 <body>
-
+    <div id="container">
     <img id="window" src="https://i.imgur.com/7uxGxhk.png" align="middle" />
     <div id="nav">
         <a href="index.html" class="button">home</a>
@@ -169,13 +212,13 @@
             i like a lot of things !! i love kitties, strawbies, anime, the color pink . . . and lots more !!
             i really love anime & manga !! my favorites so far are chobits, sweetness & lighting, n lucky star.  
             <br /><br />
-            i have a few <a href="https://mimkitty.com/#char">characters i relate to</a> from media . . . if you click the link, i will show you two of them !!
+            i have a few <a href="https://mimkitty.com/char.html">characters i relate to</a> from media . . . if you click the link, i will show you two of them !!
             relating to characters very strongly helps me work out parts of my identity or cope with various things, for me, i do it to cope and to have fun !!
             <br /><br />
             i also create affirmations, in subliminal audio, along with my web design and game design. 
             <br /><br />
             there's not much else i remember to write here, so i may update in the future. you can find updates on my github, my user name is mimkitty, 
-            or on the front page of this website. if you are interested in my thoughts, personality, feelings, and life, you can also check out my <a href="https://mimkitty.com/#diary">diary.</a>
+            or on the front page of this website. if you are interested in my thoughts, personality, feelings, and life, you can also check out my <a href="https://mimkitty.com/diary.html">diary.</a>
 
 
 
@@ -186,5 +229,6 @@
     <div id="cr">
         mimmy . . . 2020
     </div>
+        </div>
 </body>
 </html>

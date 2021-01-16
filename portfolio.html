@@ -2,33 +2,71 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <!-- edited by ഒ pooftie, https://middlepot.com -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <style>
+    
 
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+        
+        @media screen and (max-width: 1000px) and (orientation: portrait) {
+            #container {
+                position: absolute;
+                zoom: 55%;
+                left: 640px;
+                top: -180px;
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+        }
+
+        @media screen and (max-width: 1000px) and (orientation: landscape) {
+            #container {
+                position: absolute;
+                zoom: 57%;
+                left: -190px;
+                top: 10px;
+            }
+        }
 
 
         body {
             background-image: url(https://i.imgur.com/79zZr63.png);
             background-size: 183px;
-           
             color: #FFC9D8;
             padding: 0;
             margin: 0;
             font-family: Verdana;
-
         }
 
         h1 {
             font-family: 'VT323', monospace;
-            }
-            p {
+        }
+
+        p {
             font-family: Verdana;
             font-size: 10px;
         }
 
         img {
-            pointer-events: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
         }
 
         a {
@@ -37,22 +75,19 @@
         }
 
         p:hover {
-           
         }
 
         a:hover {
             text-decoration: underline;
             text-decoration-style: dotted;
             color: #fff0f3;
-
         }
 
         #window {
-            position: relative;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 75%;
+            position: absolute;
+            margin-left: 170px;
+            width: 1025px;
+
         }
 
         #blurb {
@@ -69,50 +104,54 @@
 
         #nav {
             position: absolute;
-            left: 43%;
-            top: 10%;
+            width: 500px;
+            left: 582px;
+            top: 70px;
             z-index: 100;
             font-family: 'VT323', monospace;
         }
 
         #cr {
-            margin: auto;
-            top: 50%;
-            left: 50%;
+            position: absolute;
+            width: 200px;
+            top: 590px;
+            left: 580px;
             color: #c3afa3;
             text-align: center;
             font-family: Verdana;
             font-size: 10px;
         }
-        /* 935 x 540 */
+
         #mcontent {
             position: absolute;
             overflow-x: hidden;
             overflow-y: scroll;
+            overflow: auto;
+            overflow: scroll;
             z-index: 6;
-            top: 12%;
-            left: 17%;
+            top: 84px;
+            left: 232px;
             width: 800px;
             height: 440px;
             text-align: center;
             padding: 20px 40px 20px 50px;
         }
-        /* width */
+      
         ::-webkit-scrollbar {
             width: 4px;
         }
 
-        /* Track */
+      
         ::-webkit-scrollbar-track {
             background: #fff;
         }
 
-        /* Handle */
+        
         ::-webkit-scrollbar-thumb {
             background: #ffe1e7;
         }
 
-            /* Handle on hover */
+           
             ::-webkit-scrollbar-thumb:hover {
                 background: #fde8ec;
             }
@@ -132,14 +171,14 @@
         function nocontext(e) {
             var clickedTag = (e == null) ? event.srcElement.tagName : e.target.tagName;
             if (clickedTag == "IMG") {
-                //   alert(alertMsg);
+               
                 return false;
             }
         }
-        //  var alertMsg = "Image context menu is disabled";
+        
         document.oncontextmenu = nocontext;
 
-            //]]>
+               
 
     </script>
     <link rel="shortcut icon" href="https://i.imgur.com/DnQYYpL.png">
@@ -151,26 +190,27 @@
     <title>꒰♡. . . lalala </title>
 </head>
 <body>
+    <div id="container">
+        <img id="window" src="https://i.imgur.com/7uxGxhk.png" align="middle" />
+        <div id="nav">
+            <a href="index.html" class="button">home</a>
+            <a href="portfolio.html" class="button">portfolio</a>
+            <a href="mimmy.html" class="button">about</a>
+            <a href="diary.html" class="button">diary</a>
+        </div>
+        <div id="mcontent">
 
-    <img id="window" src="https://i.imgur.com/7uxGxhk.png" align="middle" />
-    <div id="nav">
-        <a href="index.html" class="button">home</a>
-        <a href="portfolio.html" class="button">portfolio</a>
-        <a href="mimmy.html" class="button">about</a>
-        <a href="diary.html" class="button">diary</a>
-    </div>
-    <div id="mcontent">
 
 
+            <a href="https://mimmy.itch.io/rainy-day-with-teddy"><img src="https://i.imgur.com/g7OJhUo.png" width="30%" /></a><br />
+            <p>
+                ꒰ rainy day with teddy ♡ game ꒱
+            </p>
 
-        <a href="https://mimmy.itch.io/rainy-day-with-teddy"><img src="https://i.imgur.com/g7OJhUo.png" width="30%" /></a><br />
-        <p>
-            ꒰ rainy day with teddy ♡ game ꒱
-        </p>
-
-    </div>
-    <div id="cr">
-        mimmy . . . 2020
-    </div>
+        </div>
+        <div id="cr">
+            mimmy . . . 2020
+        </div>
+        </div>
 </body>
 </html>

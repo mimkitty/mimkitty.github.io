@@ -2,32 +2,70 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <!-- edited by ഒ pooftie, https://middlepot.com -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <style>
+    
 
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+      
+        @media screen and (max-width: 1000px) and (orientation: portrait) {
+            #container {
+                position: absolute;
+                zoom: 55%;
+                left: 640px;
+                top: -180px;
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+        }
+
+        @media screen and (max-width: 1000px) and (orientation: landscape) {
+            #container {
+                position: absolute;
+                zoom: 57%;
+                left: -190px;
+                top: 10px;
+            }
+        }
 
         body {
             background-image: url(https://i.imgur.com/79zZr63.png);
             background-size: 183px;
-        
             color: #FFC9D8;
             padding: 0;
             margin: 0;
             font-family: Verdana;
-
         }
 
         h1 {
             font-family: 'VT323', monospace;
         }
+
         p {
             font-family: Verdana;
             font-size: 10px;
         }
 
         img {
-            pointer-events: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
         }
 
         a {
@@ -37,73 +75,69 @@
 
         p:hover {
             cursor: url(), progress;
-            
         }
 
         a:hover {
             text-decoration: underline;
             text-decoration-style: dotted;
             color: #fff0f3;
-          
         }
-        
+
 
         #window {
-            position: relative;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 75%;
+            position: absolute;
+            margin-left: 170px;
+            width: 1025px;
         }
-
 
         #nav {
             position: absolute;
-            left: 43%;
-            top: 10%;
+            width: 500px;
+            left: 582px;
+            top: 70px;
             z-index: 100;
             font-family: 'VT323', monospace;
-             color: #fff;
         }
 
         #cr {
-            margin: auto;
-            top: 50%;
-            left: 50%;
+            position: absolute;
+            width: 200px;
+            top: 590px;
+            left: 580px;
             color: #c3afa3;
             text-align: center;
             font-family: Verdana;
             font-size: 10px;
         }
-        /* 935 x 540 */
+
         #mcontent {
             position: absolute;
             overflow-x: hidden;
             overflow-y: scroll;
+            overflow: auto;
+            overflow: scroll;
             z-index: 6;
-            top: 12%;
-            left: 17%;
+            top: 84px;
+            left: 232px;
             width: 800px;
             height: 440px;
             text-align: center;
             padding: 20px 40px 20px 50px;
         }
-        /* width */
+        
         ::-webkit-scrollbar {
             width: 4px;
         }
 
-        /* Track */
         ::-webkit-scrollbar-track {
             background: #fff;
         }
 
-        /* Handle */
+        
         ::-webkit-scrollbar-thumb {
             background: #ffe1e7;
         }
 
-            /* Handle on hover */
             ::-webkit-scrollbar-thumb:hover {
                 background: #fde8ec;
             }
@@ -117,35 +151,35 @@
             background-color: #FFC9D8;
             padding: 5px;
         }
+
         .entry {
             font-family: Verdana;
             font-size: 10px;
         }
+
         #diarynav {
             font-family: Verdana;
             font-size: 10px;
-            color: #c3afa3;
+            color: #fff;
             border: dotted 1px;
             border-color: #c3afa3;
             border-radius: 10px;
             background-color: #ffe1e7;
             padding: 4px;
         }
+
             #diarynav:hover {
                 color: #fff;
-                text-decoration: underline;
-                text-decoration-style: dotted;
-                cursor: url(http://www.rw-designer.com/cursor-extern.php?id=108567), progress;
+               
             }
+
         a:hover {
-            cursor: url(http://www.rw-designer.com/cursor-extern.php?id=108567), progress;
+          
         }
 
         hr {
             border-top: 1px dotted #c3afa3;
-            
         }
-            
     </style>
     <script type="text/javascript">
 
@@ -159,7 +193,7 @@
         //  var alertMsg = "Image context menu is disabled";
         document.oncontextmenu = nocontext;
 
-            //]]>
+                //]]>
 
     </script>
     <link rel="shortcut icon" href="https://i.imgur.com/DnQYYpL.png">
@@ -171,45 +205,74 @@
     <title>꒰♡. . . lalala </title>
 </head>
 <body>
+    <div id="container">
+        <img id="window" src="https://i.imgur.com/7uxGxhk.png" align="middle" />
+        <div id="nav">
+            <a href="index.html" class="button">home</a>
+            <a href="portfolio.html" class="button">portfolio</a>
+            <a href="mimmy.html" class="button">about</a>
+            <a href="diary.html" class="button">diary</a>
+        </div>
+        <div id="mcontent">
 
-    <img id="window" src="https://i.imgur.com/7uxGxhk.png" align="middle" />
-    <div id="nav">
-        <a href="index.html" class="button">home</a>
-        <a href="portfolio.html" class="button">portfolio</a>
-        <a href="mimmy.html" class="button">about</a>
-        <a href="diary.html" class="button">diary</a>
-    </div>
-    <div id="mcontent">
+            <p>
+                <div id="diarynav">
+                    <a href="#jan132021" bg-color="#c3afa3">13 jan 2021 </a> ♡
+                    <a href="#jan142021">14 jan 2021</a>
 
-        <p>
-            <div id="diarynav"><a href="#jan132021" bg-color="#c3afa3">jan 13 2021</a></div> <br />
-            <div id="jan132021" class="entry">
-                ꒰ ♡ dear diary . . . january 13th 2021
+
+
+                </div>
                 <br />
-                <img src="https://i.imgur.com/kkMADus.png" align="middle" width="60%" /> <br />
+                <div id="jan132021" class="entry">
+                    ꒰ ♡ dear diary . . . january 13th 2021
+                    <br />
+                    <img src="https://i.imgur.com/kkMADus.png" align="middle" width="60%" /> <br />
 
-                today i bought some seaweed soup. i have never had it, i think, so i cannot wait to try it. i also purchased miso paste to make better miso soup with, as i
-                usually eat the instant miso. i think that the paste has more live bacteria in it, and i am coming off of antibiotics, so some probiotics are in order.
-                other than that, i have been working on this website. i am very proud of it but still have a few steps to go . . . i know that i will make it !! after it is finished,
-                i will have more time to work on art and games. i am really, really, really excited to make more games . . . i have not really had many ideas, but i know that once i
-                take the time to think . . . i will know what to do ♡ <br /> <br />
+                    today i bought some seaweed soup. i have never had it, i think, so i cannot wait to try it. i also purchased miso paste to make better miso soup with, as i
+                    usually eat the instant miso. i think that the paste has more live bacteria in it, and i am coming off of antibiotics, so some probiotics are in order.
+                    other than that, i have been working on this website. i am very proud of it but still have a few steps to go . . . i know that i will make it !! after it is finished,
+                    i will have more time to work on art and games. i am really, really, really excited to make more games . . . i have not really had many ideas, but i know that once i
+                    take the time to think . . . i will know what to do ♡ <br /> <br />
 
-                i know that i have had a dress-up game in the works, and i intend on finishing it. life has simply been . . . ever-changing. i have moved, i am more active 
-                i am more aware of things around me, and i am more free. i am learning everyday. yesterday i did laundry for the first time in a very long time . . . and it feels good
-                to be able to do that for myself. i honestly cannot wait to do it again. i enjoy doing chores even though sometimes i lack the motivation . . . i have found a new rhythm to life,
-                and things are turning up !! ♡
-                <br /><br />
-                sincerely, mimmy ♡ 
-                
-            </div> 
-            <br />
-            <hr />
+                    i know that i have had a dress-up game in the works, and i intend on finishing it. life has simply been . . . ever-changing. i have moved, i am more active
+                    i am more aware of things around me, and i am more free. i am learning everyday. yesterday i did laundry for the first time in a very long time . . . and it feels good
+                    to be able to do that for myself. i honestly cannot wait to do it again. i enjoy doing chores even though sometimes i lack the motivation . . . i have found a new rhythm to life,
+                    and things are turning up !! ♡
+                    <br /><br />
+                    sincerely, mimmy ♡
+                    <br />
+                    <hr />
+                    <br />
 
-        </p>
+                </div>
+                <div id="jan142021" class="entry">
+                    ꒰ ♡ dear diary . . . january 14th 2021
+                    <br /><br />
+                    i had a very good breakfast. i had seaweed soup with ginseng green tea . . .
+                    with a salmon omelette. it made me feel warm and nice. it felt good cooking for myself today, and i wish to learn more recipes. soon i must shop for groceries, to get vegetables. i wish to make miso soup with all of the things i like!
+                    <br /><br />
 
-    </div>
-    <div id="cr">
-        mimmy . . . 2020
-    </div>
+                    last night my partner and i watched howl's moving castle. thus far, it has been one of my favorite ghibli movies. it had excellent art, lore, and pacing, and was emotional. i loved it. the world felt so big and interesting. perhaps i should read the book it was based off of.
+                    <br /><br />
+
+                    now, today, i am studying a javascript library that will allow me to embed HTML games, so i can share things with you all. i have been getting a lot better, i understand more things with web development and game development . . . i aim to get even better and release a lot this year . . . but if i don't, there's always more time and more to create.
+                    <br /><br />
+
+                    thank you for your love and support. it's something i am grateful for everyday, to have people i can interact with, to have people enjoy the same things as i do, and to have people enjoy my work and feel comforted by it.
+                    <br /><br />
+                    sincerely, mimmy ♡
+                </div>
+
+                <br />
+                <hr />
+
+            </p>
+
+        </div>
+        <div id="cr">
+            mimmy . . . 2020
+        </div>
+        </div>
 </body>
 </html>
