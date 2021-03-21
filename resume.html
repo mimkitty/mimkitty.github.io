@@ -1,0 +1,233 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@800&family=Playfair+Display&display=swap" rel="stylesheet">
+    <!DOCTYPE html>
+
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>m. lovejoy</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@800&family=Playfair+Display&display=swap" rel="stylesheet">
+        <style>
+            html {
+                -webkit-text-size-adjust: 100%;
+                text-size-adjust: 100%;
+            }
+
+            @media screen and (max-width: 1000px) and (orientation: portrait) {
+                #container {
+                    position: absolute;
+                    zoom: 200%;
+                    left: -460px;
+                    top: 200px;
+                }
+            }
+
+            @media screen and (max-width: 1000px) and (orientation: landscape) {
+                #container {
+                    position: absolute;
+                    zoom: 57%;
+                    left: -190px;
+                    top: 10px;
+                }
+            }
+
+            body {
+                background-color: #FFFAF2;
+            }
+
+            #bg {
+                margin: auto;
+                width: 408px;
+                height: 528px;
+                position: absolute;
+                background-color: #F1AD8E;
+                left: 500px;
+                top: 50px;
+                -webkit-box-shadow: 0px 0px 26px 15px rgba(255,198,120,0.29);
+                box-shadow: 0px 0px 26px 15px rgba(255,198,120,0.29);
+            }
+
+            #name {
+                color: #A8451B;
+                margin: auto;
+                font-size: 54px;
+                position: absolute;
+                z-index: 100;
+                left: 500px;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            #desc {
+                position: absolute;
+                font-family: 'Abril Fatface', cursive;
+                font-size: 16px;
+                top: 75px;
+                left: 600px;
+                z-index: 99;
+                color: #74402D;
+            }
+
+            #info {
+                position: absolute;
+                display: none;
+                font-family: 'Playfair Display', serif;
+                font-size: 16px;
+                top: 100px;
+                left: 700px;
+                z-index: 98;
+                width: 175px;
+            }
+
+            #photo {
+                position: absolute;
+                display: none;
+                z-index: 97;
+                width: 10%;
+                left: 550px;
+                top: 125px;
+            }
+
+            #bio {
+                position: absolute;
+                display: none;
+                font-family: 'Abril Fatface', cursive;
+                font-size: 14px;
+                top: 310px;
+                left: 570px;
+                z-index: 95;
+                color: #74402D;
+                text-align: center;
+            }
+
+            #portfolio {
+                position: absolute;
+                display: none;
+                font-family: 'Playfair Display', serif;
+                font-size: 14px;
+                top: 375px;
+                left: 585px;
+                z-index: 95;
+                color: #74402D;
+                text-align: center;
+            }
+
+            a:link {
+                color: #FFFAF2;
+                text-decoration: underline dotted 2px;
+            }
+
+            a:hover {
+                color: #BF8161;
+                text-decoration: underline dotted 2px;
+            }
+
+            a:visited {
+                color: #CF6357;
+                text-decoration: underline dotted 2px;
+            }
+        </style>
+       
+        <link rel="shortcut icon" href=" https://i.imgur.com/lol7PzI.png">
+    </head>
+
+
+
+ 
+<body>
+    <div id="container">
+
+        <div id="name">m. lovejoy </div>
+        <div id="desc"> front-end web designer / game developer</div>
+        <div id="info">
+            <p style="text-decoration: underline dotted 2px;">developed skills</p> HTML, CSS, basic JavaScript, experience in graphic design (2yrs, Adobe Suite), Processing (Java Library)
+            <br /><br />
+            <p style="text-decoration:underline dotted 2px;">skills in development</p> mobile optimization, JS libraries (JQuery, P5.js)
+            <br /><br />
+            <p style="text-decoration: underline dotted 2px;">underdeveloped skills</p> back-end development
+        </div>
+            <img id="photo" src="https://i.imgur.com/CFPSpyB.png" />
+            <div id="bio">
+                comp sci.major<br /> ✿ <br />
+                19 •﻿ she / they <br /> 
+
+
+
+
+            </div>
+        <div id="portfolio" text-align="middle">
+            <a href="https://mimkitty.com">my website</a> <br />
+            <a href="/https://mimmy.itch.io/">my games</a> 
+        </div>
+       
+
+
+        <div id="bg"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var clickNum = 0;
+        $(document).ready(function () {
+                $("#info").fadeIn(7000);
+                $("#photo").fadeIn(9000);
+                $("#bio").fadeIn(8000);
+                $("#portfolio").fadeIn(9000);
+           });
+        
+
+          
+      
+    </script>
+    <script>
+        $.fn.characterize = function (wrapper, options) {
+            var txt = this.text(),
+                self = this;
+
+            this.empty();
+
+            wrapper = wrapper || '<span />';
+            options = options || {};
+
+            Array.prototype.forEach.call(txt, function (c) {
+                options.text = c;
+                self.append($(wrapper, options));
+            });
+        };
+
+
+        function animate() {
+            var name = $('#name');
+            var desc = $('#desc');
+
+            name.characterize('<span />', {
+                class: 'fd',
+                css: {
+                    opacity: 0
+                }
+            });
+            desc.characterize('<span />', {
+                class: 'fd',
+                css: {
+                    opacity: 0
+                }
+            });
+
+            name.css('opacity', 1);
+            desc.css('opacity', 1);
+
+            $('.fd').each(function (i) {
+                $(this).animate({ opacity: 1 }, (i + 1) * 100);
+            });
+        }
+
+
+        animate();
+    </script>
+
+
+</body>
+</html>
