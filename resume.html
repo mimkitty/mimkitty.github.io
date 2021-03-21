@@ -78,7 +78,7 @@
                 font-family: 'Playfair Display', serif;
                 font-size: 16px;
                 top: 100px;
-                left: 700px;
+                left: 720px;
                 z-index: 98;
                 width: 175px;
             }
@@ -102,6 +102,18 @@
                 z-index: 95;
                 color: #74402D;
                 text-align: center;
+            }
+            #blurb {
+                position: absolute;
+                display: none;
+                font-family: 'Abril Fatface', cursive;
+                font-size: 10px;
+                top: 420px;
+                left: 545px;
+                z-index: 95;
+                color: #74402D;
+                text-align: center;
+                width: 150px;
             }
 
             #portfolio {
@@ -130,6 +142,10 @@
                 color: #CF6357;
                 text-decoration: underline dotted 2px;
             }
+
+            ::selection {
+                text-shadow: #ff7300 1px 0 10px;
+            }
         </style>
        
         <link rel="shortcut icon" href=" https://i.imgur.com/lol7PzI.png">
@@ -148,22 +164,25 @@
             <br /><br />
             <p style="text-decoration:underline dotted 2px;">skills in development</p> mobile optimization, JS libraries (JQuery, P5.js)
             <br /><br />
-            <p style="text-decoration: underline dotted 2px;">underdeveloped skills</p> back-end development
+            <p style="text-decoration: underline dotted 2px;">strengths</p> fast learner, flexible, self-motivated, creative, task-oriented
         </div>
-            <img id="photo" src="https://i.imgur.com/CFPSpyB.png" />
-            <div id="bio">
-                comp sci.major<br /> ✿ <br />
-                19 •﻿ she / they <br /> 
+        <img id="photo" src="https://i.imgur.com/JzrQtec.png" />
+        <!-- https://i.imgur.com/0ZiE8Rk.png -->
+        <!-- https://i.imgur.com/JzrQtec.png-->
+        <div id="bio">
+            comp sci.major  <br /> ✿ <br />
+            19 •﻿ she / her <br />
+        </div>
+        <div id="blurb">
+        mimmy is a young, driven student who wishes to apply her <br /> knowledge of web-design in a creative way. <br /><br />
+        she is passionate about art, fashion, and increasing diversity in computer science.
 
-
-
-
-            </div>
+        </div>
         <div id="portfolio" text-align="middle">
-            <a href="https://mimkitty.com">my website</a> <br />
-            <a href="/https://mimmy.itch.io/">my games</a> 
+            <a href="https://mimkitty.com">her website</a> <br />
+            <a href="/https://mimmy.itch.io/">her games</a>
         </div>
-       
+
 
 
         <div id="bg"></div>
@@ -175,6 +194,7 @@
                 $("#info").fadeIn(7000);
                 $("#photo").fadeIn(9000);
                 $("#bio").fadeIn(8000);
+                $("#blurb").fadeIn(8000);
                 $("#portfolio").fadeIn(9000);
            });
         
