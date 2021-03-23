@@ -1,0 +1,376 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>ONEUL ZINE</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@800&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        @media screen and (max-width: 1000px) and (orientation: portrait) {
+            #container {
+                position: absolute;
+                zoom: 200%;
+                left: -460px;
+                top: 200px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) and (orientation: landscape) {
+            #container {
+                position: absolute;
+                zoom: 57%;
+                left: -190px;
+                top: 10px;
+            }
+        }
+
+        body {
+            background: rgb(237,178,204);
+            background: radial-gradient(circle, rgba(237,178,204,1) 0%, rgba(252,218,221,1) 100%);
+            font-family: 'Varela Round', sans-serif;
+            font-style: italic;
+            color: #7d5661;
+        }
+
+        #bg {
+            position: absolute;
+            margin: auto;
+            width: 760px;
+            height: auto;
+            position: absolute;
+            background-color: #FFF8F4;
+            left: 295px;
+            top: 100px;
+            -webkit-box-shadow: 0px 0px 50px 27px rgba(244,204,202,0.92), 29px 5px 50px 26px #FDA2DA, -37px -15px 50px 26px #FFF1E9;
+            box-shadow: 0px 0px 50px 27px rgba(244,204,202,0.92), 29px 5px 50px 26px #FDA2DA, -37px -15px 50px 26px #FFF1E9;
+        }
+
+        .nav {
+            position: absolute;
+            left: 295px;
+            top: 75px;
+            z-index: 98;
+        }
+
+        #oneul {
+            position: absolute;
+            left: 625px;
+            top: 25px;
+            z-index: 99;
+        }
+
+        #playlists {
+            left: 1065px;
+            position: absolute;
+            top: 100px;
+        }
+
+        a:link {
+            color: #FFF8F4;
+            text-decoration: underline 2px;
+        }
+
+        a:hover {
+            color: #FFA9CF;
+            text-decoration: underline 2px;
+        }
+
+        a:visited {
+            color: #FFF8F4;
+            text-decoration: underline 2px;
+        }
+
+        ::selection {
+            text-shadow: #FDA2DA 1px 0 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #F4CCCA;
+            border-radius: 0px;
+            background: #FFF8F4;
+        }
+
+
+        ::-webkit-scrollbar-thumb {
+            background: #EDB2CC;
+            border-radius: 10px;
+        }
+
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #FFA9CF;
+            }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          
+        }
+
+        .row img {
+            width: 250px;
+            height: 250px;
+        }
+
+        #content {
+            padding: 15px;
+           
+        }
+
+        #latest {
+            top: 100px;
+            position: absolute;
+        }
+
+        #anon {
+            top: 335px;
+            position: absolute;
+        }
+
+        .sidebox {
+            position: absolute;
+            font-size: 12px;
+            margin: auto;
+            width: 230px;
+            height: 230px;
+            position: absolute;
+            background-color: #FFF8F4;
+            padding: 10px 10px 10px 10px;
+            left: 55px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #FCDADD;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .tooltip {
+            position:relative;
+            display: inline-block;
+        }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 84px;
+                font-size:9px;
+                background-color: #FFF8F4;
+                color: #7d5661;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                border: 2px dotted #7d5661;
+                position: absolute;
+                z-index: 99;
+                top:20px;
+                left:10%;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+    </style>
+
+    <link rel="shortcut icon" href="https://i.imgur.com/UtFCwPc.png">
+    <script>
+        function oneulon() {
+            document.getElementById('myimage1').src = "https://i.imgur.com/URliMl7.png";
+        }
+        function oneuloff() {
+            document.getElementById('myimage1').src = "https://i.imgur.com/e66v0YN.png";
+        }
+            function oneulon2() {
+                document.getElementById('myimage2').src = "https://i.imgur.com/URliMl7.png";
+            }
+            function oneuloff2() {
+                document.getElementById('myimage2').src = "https://i.imgur.com/fmM0gvU.png";
+            }
+            function oneulon3() {
+                document.getElementById('myimage3').src = "https://i.imgur.com/URliMl7.png";
+            }
+            function oneuloff3() {
+                document.getElementById('myimage3').src = "https://i.imgur.com/DhfjYJT.png";
+            }
+            function oneulon4() {
+                document.getElementById('myimage4').src = "https://i.imgur.com/URliMl7.png";
+            }
+            function oneuloff4() {
+                document.getElementById('myimage4').src = "https://i.imgur.com/Y54RXBH.png";
+            }
+            function oneulon5() {
+                document.getElementById('myimage5').src = "https://i.imgur.com/URliMl7.png";
+            }
+            function oneuloff5() {
+                document.getElementById('myimage5').src = "https://i.imgur.com/MB5n9mK.png";
+            }
+            function oneulon6() {
+                document.getElementById('myimage6').src = "https://i.imgur.com/URliMl7.png";
+            }
+            function oneuloff6() {
+                document.getElementById('myimage6').src = "https://i.imgur.com/gqC3GEo.png";
+            }
+
+        
+    </script>
+</head>
+
+
+<body>
+    <div id="container">
+
+        <div class="nav">
+            <a href="https://mimkitty.com/oneulpitch">home</a>
+            <a href="https://mimkitty.com/oneulpitch">shop</a>
+            <div class="dropdown">
+                <span><a href="https://mimkitty.com/oneulpitch">menu</a></span>
+                <div class="dropdown-content">
+                    <a href="https://mimkitty.com/oneulpitch">articles</a><br />
+                    <a href="https://mimkitty.com/oneulpitch">visuals</a><br />
+                    <a href="https://mimkitty.com/oneulpitch">advice</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span><a href="https://mimkitty.com/oneulpitch">submit</a></span>
+                <div class="dropdown-content">
+                    <a href="https://mimkitty.com/oneulpitch">guideline</a><br />
+                    <a href="https://mimkitty.com/oneulpitch">for i03</a>
+                </div>
+            </div>
+
+            <a href="https://mimkitty.com/oneulpitch">contact</a>
+        </div>
+        <div id="oneul">
+            <img align="middle" width="20%" src="https://i.imgur.com/UtFCwPc.png" />
+        </div>
+
+        <div id="bg">
+            <div id="content">
+                <marquee><h1>ONEUL ZINE ☆﻿ ISSUE 02 OUT NOW!</h1></marquee>
+                <p style="text-align:center;">
+                    oneul 오늘 (o ・neul) means "today" in korean. <br /><br />
+
+                    today is what defines you and today is the day you express yourself. <br /><br />
+
+                    oneul zine is an independent magazine & platform that was created by a teen in 2020 to provide young creatives an inspiring, <br />
+                    safe, and uplifting community. we are here to let people portray and express themselves in their best way possible. <br /><br />
+                </p>
+
+                <center> <a href="https://instagram.com/oneulzine" style="text-shadow: 0px 0px 30px rgba(255,0,157,1);font-size:18px;text-align:center;">instagram</a></center>
+                <!--  -->
+                <div class="row">
+
+                    <a href="https://www.instagram.com/p/CKcOh17g5oD/?utm_source=ig_web_copy_link">
+                        <div class="column tooltip">
+                            <img id="myimage1" onmouseover="oneulon()" onmouseout="oneuloff()" src="https://i.imgur.com/e66v0YN.png" alt="Athena Merry" style="width:100%"><span class="tooltiptext">Athena Merry</span>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/p/CKSBujdgqEB/?utm_source=ig_web_copy_link">
+                        <div class="column tooltip">
+                            <img id="myimage2" onmouseover="oneulon2()" onmouseout="oneuloff2()" src="https://i.imgur.com/fmM0gvU.png" alt="Sofia Aviles" style="width:100%">
+                            <span class="tooltiptext">Sofia Aviles</span>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/p/CKKIAM3ArYT/?utm_source=ig_web_copy_link">
+                        <div class="column tooltip">
+                            <img id="myimage3" onmouseover="oneulon3()" onmouseout="oneuloff3()" src="https://i.imgur.com/DhfjYJT.png" alt="Ella King" style="width:100%">
+                            <span class="tooltiptext">Ella King</span>
+                        </div>
+                    </a>
+
+
+
+                    <!-- https://i.imgur.com/URliMl7.png hover over png-->
+
+                </div>
+
+                <div class="row">
+                    <a href="https://www.instagram.com/p/CKFJ4y_ARtu/?utm_source=ig_web_copy_link">
+                        <div class="column tooltip">
+                            <img id="myimage4" onmouseover="oneulon4()" onmouseout="oneuloff4()" src="https://i.imgur.com/Y54RXBH.png" alt="Andy Nguyen" style="width:100%">
+                            <span class="tooltiptext">Andy Nguyen</span>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/p/CJyZ6WlAr6W/?utm_source=ig_web_copy_link">
+                        <div class="column tooltip">
+                            <img id="myimage5" onmouseover="oneulon5()" onmouseout="oneuloff5()" src="https://i.imgur.com/MB5n9mK.png" alt="MAKE A BUDDY" style="width:100%">
+                            <span class="tooltiptext">Make a Buddy</span>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/p/CJrGkB5gI3F/?utm_source=ig_web_copy_link">
+                        <div class="column tooltip">
+                            <img id="myimage6" onmouseover="oneulon6()" onmouseout="oneuloff6()" src="https://i.imgur.com/gqC3GEo.png" alt="Emma Robb" style="width:100%">
+                            <span class="tooltiptext">Emma Robb</span>
+                        </div>
+                    </a>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div id="playlists">
+            <iframe src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A2rc9YFsnlKYm1X2iUBm87Z"
+                    width="230" height="230" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <br />
+            <iframe src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A0iS8MiXHXycV5nD5kZcbFS"
+                    width="230" height="230" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="sidebox" id="latest">
+            <h1 style="font-size:14px;">LATEST ARTICLES</h1><br />
+            fashion ☆ 3/5/21 ☆ The Footprint of Fast Fashion <br /><br />
+            fashion ☆ 3/3/21 ☆ Here’s Why Sticking to a Certain Style Aesthetic is a Fashion Myth<br /><br />
+            fashion, pop culture ☆ 1/10/21 ☆ Calling All Fashion Lovers: Films That Are a Must Watch
+
+        </div>
+        <div class="sidebox" id="anon">
+            <h1 style="font-size:14px;">ANONYMOUS CONTACT</h1><br />
+            <textarea id="w3review" name="w3review" rows="4" cols="25">spill your thoughts... </textarea>
+
+        </div>
+    </div>
+
+</body>
+</html>
