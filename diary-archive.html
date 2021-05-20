@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- edited by ഒ pooftie, https://middlepot.com -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+    
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        @media screen and (max-width: 1000px) and (orientation: portrait) {
+            #container {
+                position: absolute;
+                zoom: 55%;
+                left: 640px;
+                top: -180px;
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+        }
+
+        @media screen and (max-width: 1000px) and (orientation: landscape) {
+            #container {
+                position: absolute;
+                zoom: 57%;
+                left: -190px;
+                top: 10px;
+            }
+        }
+
+
+
+        body {
+            background-image: url(https://i.imgur.com/79zZr63.png);
+            background-size: 183px;
+            color: #FFC9D8;
+            padding: 0;
+            margin: 0;
+            font-family: Verdana;
+        }
+
+        h1 {
+            font-family: 'VT323', monospace;
+        }
+
+        p {
+            font-family: Verdana;
+            font-size: 10px;
+        }
+
+        img {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        p:hover {
+            cursor: url(), progress;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            color: #fff0f3;
+        }
+
+
+        #window {
+            position: absolute;
+            margin-left: 170px;
+            width: 1025px;
+        }
+
+        #nav {
+            position: absolute;
+            width: 500px;
+            left: 582px;
+            top: 70px;
+            z-index: 100;
+            font-family: 'VT323', monospace;
+        }
+
+        #cr {
+            position: absolute;
+            width: 200px;
+            top: 590px;
+            left: 580px;
+            color: #c3afa3;
+            text-align: center;
+            font-family: Verdana;
+            font-size: 10px;
+            border: dotted 1px;
+            background-color: #fff0f3;
+            border-radius: 10px;
+        }
+
+        #mcontent {
+            position: absolute;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            overflow: auto;
+            overflow: scroll;
+            z-index: 6;
+            top: 75px;
+            left: 244px;
+            width: 797px;
+            height: 440px;
+            text-align: center;
+            padding: 20px 40px 20px 50px;
+        }
+        
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #fff;
+        }
+
+        
+        ::-webkit-scrollbar-thumb {
+            background: #ffe1e7;
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #fde8ec;
+            }
+
+        ::selection {
+            text-shadow: #FFC9D8 1px 0 10px;
+        }
+
+        .button {
+            border-radius: 12px;
+            background-color: #FFC9D8;
+            padding: 5px;
+        }
+
+        .entry {
+            font-family: Verdana;
+            font-size: 10px;
+        }
+
+        #diarynav {
+            font-family: Verdana;
+            font-size: 10px;
+            color: #fff;
+            border: dotted 1px;
+            border-color: #c3afa3;
+            border-radius: 10px;
+            background-color: #ffe1e7;
+            padding: 4px;
+        }
+
+            #diarynav:hover {
+                color: #fff;
+               
+            }
+
+        a:hover {
+          
+        }
+
+        hr {
+            border-top: 1px dotted #c3afa3;
+        }
+        .b1 {
+            display: inline-block;
+        }
+      
+    </style>
+    <script type="text/javascript">
+    
+
+        function nocontext(e) {
+            var clickedTag = (e == null) ? event.srcElement.tagName : e.target.tagName;
+            if (clickedTag == "IMG") {
+                //   alert(alertMsg);
+                return false;
+            }
+        }
+        //  var alertMsg = "Image context menu is disabled";
+        document.oncontextmenu = nocontext;
+
+                //]]>
+
+    </script>
+    <link rel="shortcut icon" href="https://i.imgur.com/DnQYYpL.png">
+    <meta charset="utf-8" />
+    <meta name="description" content=". . .">
+    <meta name="keywords" content="soft aesthetic, mimkitty, kawaii, kawaii musician, mimmy, mimmy lala, game design, web design, diary,
+          collage, art, writing, poetry, thoughts, articles">
+    <meta name="author" content="mimmy, mimkitty">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꒰ ♡ 𝚍𝚎𝚊𝚛 𝚍𝚒𝚊𝚛𝚢 . . . ♡</title>
+</head>
+<body>
+    <div id="container">
+        <img id="window" src="https://i.imgur.com/7uxGxhk.png" align="middle" />
+        <div id="nav">
+            <a href="index.html" class="button">home</a>
+            <a href="portfolio.html" class="button">portfolio</a>
+            <a href="mimmy.html" class="button">about</a>
+            <a href="diary.html" class="button">diary</a>
+        </div>
+        <div id="mcontent">
+            <img src="https://i.imgur.com/4DXZGoq.gif" />
+            <p>
+                <div id="diarynav">
+                    <a href="#jan242021">24 jan 2021</a> ♡
+                    <a href="#jan222021">22 jan 2021</a> ♡
+                    <a href="#jan192021">19 jan 2021</a> ♡
+                    <a href="#jan142021">14 jan 2021</a> ♡
+                    <a href="#jan132021">13 jan 2021 </a> ♡
+                    <a href="#mars92021">9 mars 2021</a>
+                </div>
+                <br /> 
+                <br />
+                <div id="mars92021" class="entry">
+                    ꒰ ♡ dear diary . . . january 24th 2021
+                    <br /><br />
+                    <img src="https://i.imgur.com/MHP0HB6.png" align="middle" width="40%" />
+                    <br /><br />
+                    in this diary, i would like to speak about some of my hardships and who i want to be and what some of my dreams are.
+                    <br><br>
+                    recently i have gone through several hardships. i have been doing so much better than i used to with my mental illness, but it still gets me sometimes, and it 
+                    has recently. i have been dealing with a lot of the stress of working towards a healthy life. 
+                    achieving healthy sugars and insulin levels is a little difficult, and has taken entire lifestyle changes. they are certainly for the positive - but it 
+                    does not mean that they cannot be a stressor. i also recently have gotten engaged. another positive thing - but happy things can be stressful too. 
+                    as i am typing, i am recovering from a 24-hour stomach bug that has left me tired and lacking energy. 
+                    i have needed to go off of my diet for this time because all i want ar strawberries, soda, and fruit. and it is important to 
+                    honor my stomach and my desires while i am recovering.
+                    <br><br>
+                    i have other medical issues i have been dealing with as well. next week, i am getting surgery as well as i am 
+                    getting my coronavirus vaccine very soon. this month is fairly overwhelming so i am just trying to take it as easy as possible. 
+                    luckily my surgeon prescribed me something for my anxiety before surgery so that i will not panic beforehand. my surgery has been a large stressor for me.
+                    <br><br>
+                    overall.. i have been busy and stressed, but i have been attempting to grow, too. i didn't get to post something that i wanted to 
+                    on my youtube channel, but i needed to take it easy. i have been reading more and learning more to become a better person and gain new perspectives on life.
+                    <br><br>
+                    now.. i will elaborate on the type of person i would like to be in this present moment.. as i have been thinking about my identity a lot.
+                    i would love to be always living in the moment, full of joy. i have been trying to spend more of my life doing. 
+                    i read more, i play more, i act on impulse, i try new things. i am trying to learn to meditate, as well. meditation has always been a large 
+                    challenge for me because my mind loves to think about the future. i have visions and dreams and love for so much - it is hard for me to 
+                    find silence. but i want to find silence and intention
+                    <br><br>
+                    i want to live my whole life with intention. i want to be intentionally kind, intentionally loving, 
+                    intentionally selfless, sensual, creative... everything. everything i do, i want to live with intention and speak my dreams into the world. 
+                    i try very hard, but i must accept this is a lifelong journey.
+                    <br><br>
+                    i want to be healthy and a good wife. i have been pondering what makes a good wife, and often, 
+                    it is the same as what makes a good person. receptive, empathetic, to be of service.. not just to my partner, 
+                    but to the whole world. kindness and love and service knows no gender. i will be the best person i can be, and that will subsequently make me a good wife.
+                    <br><br>
+                    i think i will continue another day. i am very tired and need to sort some things out again.
+                    i love and cherish all of you.. thank you for the support and kindness you have given me. i am forever thankful and 
+                    i will learn to be of better service to you and to myself.
+                    <br /><br />
+                    sincerely, mimmy ♡
+                    <br /><br />
+                    <a href="#diarynav" style="background-color:#ffe1e7; border-radius:10px; padding:4px; border: dotted #c3afa3 1px;">back to the top</a>
+                </div>
+
+                <br />
+                <hr />
+                <div id="jan242021" class="entry">
+                    ꒰ ♡ dear diary . . . january 24th 2021
+                    <br /><br />
+                    <img src="https://i.imgur.com/Z7H9Xdo.png" align="middle" width="40%" />
+                    <br /><br />
+                    i have been feeling very odd today. i noticed that the things i like aesthetically and stylistically are very influenced by those i surround myself with
+                    and my mood. i think this is normal, but it causes me to think more of my identity, and i get stressed because i want to organize my personality.
+                    however, this is unrealistic. personalities and styles are free-flowing and everchanging.
+                    <br /><br />
+                    one part of my personality that has made itself more prominent as of late are my spiritual interests. i desire to learn more about crystals
+                    and magickal stuff, like witchcraft. this has led me to begin working on a witchcraft page for my website that i will like in my about page.
+                    i will use it to organize certain magickal topics i am learning about. i am also influenced to make a game regarding crystals, spirituality, and self-love.
+                    <br /><br />
+                    to bring this entry to a close, i would like to thank those who are kind to me and close to me. i am changing everyday, and i am focusing on becoming
+                    the person i am and have always wanted to be, and your kindness helps me more than you think. i love creating things for myself and for everyone to enjoy,
+                    and i am glad that others truly do enjoy my creations and find comfort in them. i love you all ♡ thank you . . . ♡
+                    <br /><br />
+                    sincerely, mimmy ♡
+                    <br /><br />
+                    <a href="#diarynav" style="background-color:#ffe1e7; border-radius:10px; padding:4px; border: dotted #c3afa3 1px;">back to the top</a>
+                </div>
+
+                <br />
+                <hr />
+                <div id="jan22021" class="entry">
+                    ꒰ ♡ dear diary . . . january 22nd 2021
+                    <br /><br />
+                    <div class="b1">
+                        <img src="https://i.imgur.com/M7xrZxp.gif" />
+                        <img src="https://i.imgur.com/Eo9Dxjp.gif" />
+                        <img src="https://i.imgur.com/RlrY8nI.gif" />
+                        <img src="https://i.imgur.com/ibNTM1r.gif" />
+                        <img src="https://i.imgur.com/xERyVDq.gif" />
+                        <img src="https://i.imgur.com/pSoXEmM.gif" />
+                        <img src="https://i.imgur.com/Txjnfyy.gif" />
+                        <img src="https://i.imgur.com/JN7vzTS.gif" />
+                        <img src="https://i.imgur.com/ufzqGb9.gif" />
+                        <img src="https://i.imgur.com/a5133vy.gif" />
+                        <img src="https://i.imgur.com/GjiZcjX.gif" />
+                        <img src="https://i.imgur.com/N2vWNkF.gif" />
+                        <br />
+                        <img src="https://i.imgur.com/BdPSdQg.gif" />
+                        <img src="https://i.imgur.com/9Q8s9ER.gif" />
+                        <br />
+                        <img src="https://i.imgur.com/RXxuLTf.gif" />
+                        <img src="https://i.imgur.com/biHi2kw.gif" />
+                    </div>
+                    <br /><br />
+                    all blinkies found at <a href="https://gifcities.org/" style="background-color:#ffe1e7; border-radius:10px; padding:2px; border: dotted #c3afa3 1px;">gifcities</a>
+                    <br /><br />
+                    i should have linked to their web archive pages instead of just
+                    downloading and hosting them myself, but i remembered that far too late !!
+                    <br /><br />
+                    i have been sick the past few days ;-; luckily it isn't covid !! turns out it is probably strep :P but i dont have tonsils so it isn't
+                    so bad !! m taking medicine for it rn, hopefully whatever it is goes away !! after i recover i plan on exercising again, but while i rest,
+                    i am going to work on my website and browse the internet a lil bit !!
+                    <br /><br />
+                    i have sososososo many ideas it is overwhelming !! i need to find my center and regroup, and maybe relax a lil. and take things one at a time !!
+                    i just get so creative and have little ideas pop in my head all the time, my to-do list grows daily !! i need to learn to write it all down haha !!
+                    <br /><br />
+                    but i have been working really hard on my website !! i updated the little trademark thing at the bottom . . .  i also have been working on blinkies, buttons, banners, and stamps. it is a whole lot of fun,
+                    i need to remember to make time for my hobbies and have fun every once in a while, instead of worrying soso much about my health and such !!
+                    <br /><br />
+                    sincerely, mimmy ♡
+                    <br /><br />
+                    <a href="#diarynav" style="background-color:#ffe1e7; border-radius:10px; padding:4px; border: dotted #c3afa3 1px;">back to the top</a>
+                </div>
+
+                <br />
+                <hr />
+                <div id="jan192021" class="entry">
+                    ꒰ ♡ dear diary . . . january 19th 2021
+                    <br /><br />
+                    <img src="https://i.imgur.com/XLjd2AF.jpg" align="middle" width="40%" />
+                    <br /><br />
+                    lately i have had less time to work on my programming & game design, i have been so busy with other things. this week i have two dentist appointments
+                    to attend, one for a consultation to remove my wisdom teeth, and another for a cleaning. i am not excited. i do not mind the dentist, but i fear the surgery that is to
+                    come.
+                    <br /><br />
+                    i have been feeling very well. i have been working hard on my health and fitness, because i realize i must be serious about my health. i have multiple health conditions,
+                    my most prominent one being type 2 diabetes, which impacts my body and how it functions greatly. to manage it, and to hopefully put it in remission, i have been altering
+                    my diet to something that i can sustain for a long time, but also does not elevate my blood sugars very much.
+                    <br /><br />
+                    i have been focusing a lot on exercise as well. for a long time, i did not exercise. i had no energy because i struggled with depression much more in the past. since moving
+                    and gaining more control over my life, i have far more energy. i now do yoga, cardio, and calisthenics everyday, and soon, i will start jogging every other day. exercise has changed my life
+                    and how i feel about myself. my body feels better every day, i feel stronger and more flexible and i am full of energy. i also feel more confident, and it makes me happy.
+                    <br /><br />
+                    so that is why i have been a bit inactive . . . i am finding a balance in life right now, and most of my time needs to be dedicated to maintaining my mental and physical
+                    health. after this week, when less energy is dedicated to worrying about the dentist, i hope that i may start working on things again. it feels as if i have less creativity,
+                    perhaps i have less room for it, so i have not had a lot of fully formed ideas. i hope i can find something lovely to show all of you, but until then, i will be working on these
+                    necessary things in my life. thank you for your love and patience.
+                    <br /><br />
+                    sincerely, mimmy ♡
+                    <br /><br />
+                    <a href="#diarynav" style="background-color:#ffe1e7; border-radius:10px; padding:4px; border: dotted #c3afa3 1px;">back to the top</a>
+                </div>
+
+                <br />
+                <hr />
+                <div id="jan142021" class="entry">
+                    ꒰ ♡ dear diary . . . january 14th 2021
+                    <br /><br />
+                    i had a very good breakfast. i had seaweed soup with ginseng green tea . . .
+                    with a salmon omelette. it made me feel warm and nice. it felt good cooking for myself today, and i wish to learn more recipes. soon i must shop for groceries, to get vegetables. i wish to make miso soup with all of the things i like!
+                    <br /><br />
+
+                    last night my partner and i watched howl's moving castle. thus far, it has been one of my favorite ghibli movies. it had excellent art, lore, and pacing, and was emotional. i loved it. the world felt so big and interesting. perhaps i should read the book it was based off of.
+                    <br /><br />
+
+                    now, today, i am studying a javascript library that will allow me to embed HTML games, so i can share things with you all. i have been getting a lot better, i understand more things with web development and game development . . . i aim to get even better and release a lot this year . . . but if i don't, there's always more time and more to create.
+                    <br /><br />
+
+                    thank you for your love and support. it's something i am grateful for everyday, to have people i can interact with, to have people enjoy the same things as i do, and to have people enjoy my work and feel comforted by it.
+                    <br /><br />
+                    sincerely, mimmy ♡
+                    <br /><br />
+                    <a href="#diarynav" style="background-color:#ffe1e7; border-radius:10px; padding:4px; border: dotted #c3afa3 1px;">back to the top</a>
+                </div>
+
+                <br />
+                <hr />
+                <div id="jan132021" class="entry">
+                    ꒰ ♡ dear diary . . . january 13th 2021
+                    <br />
+                    <img src="https://i.imgur.com/kkMADus.png" align="middle" width="60%" /> <br />
+
+                    today i bought some seaweed soup. i have never had it, i think, so i cannot wait to try it. i also purchased miso paste to make better miso soup with, as i
+                    usually eat the instant miso. i think that the paste has more live bacteria in it, and i am coming off of antibiotics, so some probiotics are in order.
+                    other than that, i have been working on this website. i am very proud of it but still have a few steps to go . . . i know that i will make it !! after it is finished,
+                    i will have more time to work on art and games. i am really, really, really excited to make more games . . . i have not really had many ideas, but i know that once i
+                    take the time to think . . . i will know what to do ♡ <br /> <br />
+
+                    i know that i have had a dress-up game in the works, and i intend on finishing it. life has simply been . . . ever-changing. i have moved, i am more active
+                    i am more aware of things around me, and i am more free. i am learning everyday. yesterday i did laundry for the first time in a very long time . . . and it feels good
+                    to be able to do that for myself. i honestly cannot wait to do it again. i enjoy doing chores even though sometimes i lack the motivation . . . i have found a new rhythm to life,
+                    and things are turning up !! ♡
+                    <br /><br />
+                    sincerely, mimmy ♡
+                    <br /><br />
+                    <a href="#diarynav" style="background-color:#ffe1e7; border-radius:10px; padding:4px; border: dotted #c3afa3 1px;">back to the top</a>
+                    <br />
+                    <br />
+                    <br />
+                    <hr />
+                    <br />
+
+
+                </div>
+
+
+            </p>
+
+        </div>
+
+        <div id="cr">
+            <marquee>
+                ୨୧ 𝚖𝚒𝚖𝚔𝚒𝚝𝚝𝚢 ୨୧ 𝚍𝚛𝚊𝚠𝚒𝚗𝚐 𝚑𝚎𝚊𝚛𝚝𝚜 𝚒𝚗 𝚖𝚢 𝚍𝚒𝚊𝚛𝚢 ✎ ♡
+            </marquee>
+        </div>
+         </div>
+</body>
+</html>
