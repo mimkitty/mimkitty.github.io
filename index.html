@@ -1,11 +1,32 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- edited by ഒ pooftie, https://middlepot.com -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="miriam bow">
+<meta name="keywords" content="music,poetry,miriam-bow,mimkitty">
+<meta name="description" content="the online world of miriam bow: rxplore her lyrics, music, poetry & prose">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonbon&display=swap" rel="stylesheet">
+<link href="https://raw.githubusercontent.com/mimkitty/mimkitty.github.io/blob/main/stylesheet.css" rel="stylesheet">
+    <title>mimkitty / miriam bow</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@800&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
 
         html {
             -webkit-text-size-adjust: 100%;
@@ -15,14 +36,9 @@
         @media screen and (max-width: 1000px) and (orientation: portrait) {
             #container {
                 position: absolute;
-                zoom: 55%;
-                left: 640px;
-                top: -180px;
-                -webkit-transform: rotate(90deg);
-                -moz-transform: rotate(90deg);
-                -o-transform: rotate(90deg);
-                -ms-transform: rotate(90deg);
-                transform: rotate(90deg);
+                zoom: 200%;
+                left: -460px;
+                top: 200px;
             }
         }
 
@@ -34,288 +50,384 @@
                 top: 10px;
             }
         }
+@font-face {
+    font-family: 'home_sweet_homeregular';
+    src: url('https://raw.githubusercontent.com/mimkitty/mimkitty.github.io/blob/main/home_sweet_home-webfont.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/mimkitty/mimkitty.github.io/blob/main/home_sweet_home-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+ background-image: url("https://imgur.com/fL6LWK4.gif"); 
+  background-size: 10%;
+   font-family: 'Verdana', italic;
+            
+            color: #EED5D8;
+  font-size:11px;
+}
 
 
-        body {
-            background-image: url(https://i.imgur.com/79zZr63.png);
-            background-size: 183px;
-            color: #FFC9D8;
-            padding: 0;
-            margin: 0;
-            font-family: Verdana;
-        }
+h1 {
+  font-family: 'Bonbon', cursive;
+  font-size : 50px;
+  color: #FFC9D4;
+  font-weight:normal;
+  font-style:normal;
+}
+#content {
+  border: 40px solid;
+  border-image: url("https://imgur.com/UykPKBS.png") 30 repeat; 
+ border-image-outset: 30px;
+  background-color: #FCFBF7;
+  padding: 15px;
+  height: 750px;
+}
 
-        p {
-            font-family: Verdana;
-            font-size: 10px;
-        }
+#mission {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url("https://imgur.com/rOHr3sN.png") 30 repeat;
+}
+.collapsible {
+  background-color: #FFECF0;
+  color: #C3AFA3;
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 12px;
+  font-family: Verdana;
+  
+}
 
+.active, .collapsible:hover {
+  background-color: #fff;
+}
 
-        h1 {
-            font-family: 'VT323', monospace;
-            font-weight: normal;
-        }
+.collapsible:after {
+  content: '\25B8';
+  color: #000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  color:#FFC9D4;
+}
 
-        img {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            -webkit-user-drag: none;
-            -khtml-user-drag: none;
-            -moz-user-drag: none;
-            -o-user-drag: none;
-            user-drag: none;
-        }
+.active:after {
+  content: "\25BE";
+  color:#FFC9D4;
+}
 
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
+.months {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #FFECF0;
+  color:#FFC9D4;
+}
+.articles {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #FFECF0;
+  color:#FFC9D4;
+}
 
-        p:hover {
-        }
+#paw {
+  position:absolute;
+  margin:0;
+  left:550px;
 
-        a:hover {
-            text-decoration: underline;
-            text-decoration-style: dotted;
-            color: #fff0f3;
-        }
+}
+     
 
-        #window {
+        #bg {
+          background-color:#FAF4E8 ;
             position: absolute;
-            margin-left: 170px;
-            width: 1025px;
-        }
-
-        #smallwindow {
-            position: absolute;
-            width: 342px;
-            left: 956px;
-            top: 245px;
-            z-index: 100;
-        }
-
-        #smallcontent {
-            position: absolute;
-            color: #c3afa3;
-            z-index: 101;
-            left: 1065px;
-            top: 313px;
-            width: 130px;
-        }
-
-        table, th, td {
-            border: 2px dotted #c3afa3;
             margin: auto;
-            border-collapse: collapse;
-            padding: 10px;
+            width: 760px;
+            
+            position: absolute;
+            
+            left: 295px;
+            top: 100px;
+            
         }
 
-        #blurb {
+        .nav {
+            position: absolute;
+            left: 295px;
+            top: 25px;
+            z-index: 98;
+        }
+
+        
+
+        #playlists {
+            left: 1065px;
             position: absolute;
             top: 100px;
         }
 
-        #blurbContent {
-            color: #c3afa3;
-            position: absolute;
-            bottom: 75px;
-            left: 68px;
-            width: 100px;
-            font-family: 'VT323', monospace;
+        a:link {
+            color: #C3AFA3;
+            text-decoration: underline dotted  #EED5D8 1px;
         }
 
-
-
-        #wordsBig {
-            font-size: 12px;
+        a:hover {
+            color: #FFA9CF;
+            text-decoration: dotted 1px;
         }
 
-        #nav {
-            position: absolute;
-            width: 500px;
-            left: 582px;
-            top: 70px;
-            z-index: 100;
-            font-family: 'VT323', monospace;
+        a:visited {
+            color: #C3AFA3;
+            text-decoration: dotted 2px;
         }
 
-        #cr {
-            position: absolute;
-            width: 200px;
-            top: 590px;
-            left: 580px;
-            color: #c3afa3;
-            text-align: center;
-            font-family: Verdana;
-            font-size: 10px;
-            border: dotted 1px;
-            background-color: #fff0f3;
-            border-radius: 10px;
-
+        ::selection {
+            text-shadow: #FDA2DA 1px 0 10px;
         }
 
-        #mcontent {
-            position: absolute;
-            overflow-x: hidden;
-            overflow-y: scroll;
-            overflow: auto;
-            overflow: scroll;
-            z-index: 6;
-            top: 75px;
-            left: 244px;
-            width: 797px;
-            height: 440px;
-            text-align: center;
-            padding: 20px 40px 20px 50px;
-        }
         ::-webkit-scrollbar {
-            width: 4px;
+            width: 5px;
         }
 
 
         ::-webkit-scrollbar-track {
-            background: #fff;
+            box-shadow: inset 0 0 5px #F4CCCA;
+            border-radius: 0px;
+            background: #FFF8F4;
         }
 
 
         ::-webkit-scrollbar-thumb {
-            background: #ffe1e7;
+            background: #EDB2CC;
+            border-radius: 10px;
         }
 
 
             ::-webkit-scrollbar-thumb:hover {
-                background: #fde8ec;
+                background: #FFA9CF;
             }
 
-        ::selection {
-            text-shadow: #FFC9D8 1px 0 10px;
-        }
-
-        .button {
-            border-radius: 12px;
-            background-color: #FFC9D8;
+        .column {
+            float: left;
+            width: 33.33%;
             padding: 5px;
+            
         }
 
-        #status {
-            border: dotted 1px;
-            border-radius: 10px;
-            background-color: #fff0f3;
-            border-color: #c3afa3;
-            font-family: Verdana;
-            color: #c3afa3;
-            font-size: 10px;
-            padding: 4px;
-            line-height: 20px;
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          
         }
-    </style>
-    <script type="text/javascript">
 
-        function nocontext(e) {
-            var clickedTag = (e == null) ? event.srcElement.tagName : e.target.tagName;
-            if (clickedTag == "IMG") {
-              
-                return false;
+        .row img {
+            width: 250px;
+            height: 250px;
+        }
+
+  
+
+        #latest {
+            top: 100px;
+            position: absolute;
+        }
+
+        #anon {
+            top: 335px;
+            position: absolute;
+        }
+
+        .sidebox {
+            position: absolute;
+            font-size: 12px;
+            margin: auto;
+            width: 230px;
+            height: 525px;
+            position: absolute;
+            background-color: #FFECF0;
+            padding: 10px 10px 10px 10px;
+            left: 55px;
+          background-image: 
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #F9F2EF;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .tooltip {
+            position:relative;
+            display: inline-block;
+        }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 84px;
+                font-size:9px;
+                background-color: #FFF8F4;
+                color: #7d5661;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                border: 2px dotted #7d5661;
+                position: absolute;
+                z-index: 99;
+                top:20px;
+                left:10%;
             }
-        }
-    
-        document.oncontextmenu = nocontext;
 
-                  
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+    </style>
+
+ 
+    <script>
+    
+
+        
     </script>
-    <link rel="shortcut icon" href="https://i.imgur.com/DnQYYpL.png">
-    <meta charset="utf-8" />
-    <meta name="description" content="welcome to my virtual blankie fort . . . ♡
-     here you will see my dreams . . . my wishes . . . ♡ and my attempts to fulfill them . . . ♡ enter the fort . . . under the quilt . . . ♡ and explore !">
-    <meta name="keywords" content="soft aesthetic, mimkitty, kawaii, kawaii musician, mimmy, mimmy lala, game design, web design">
-    <meta name="author" content="mimmy, mimkitty">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>꒰ ୨୧ 𝗆𝗂𝗆𝗄𝗂𝗍𝗍𝗒 ୨୧ 𝗅𝖺𝗅𝖺 ♡</title>
 </head>
 
+
 <body>
-    
+   
+  <div id="container"><div id="paw">
+    <h1>miriam bow</h1> 
+         </div>
+        
 
-    <div id="container">
+        <div id="bg">
+          <div class="nav">
+            <a href="https://mimkitty.com/index.html">home</a>
+            <a href="https://mimkitty.com/blog.html">blog</a>
+            <div class="dropdown">
+                <span><a href="https://mimkitty.com/about.html">about</a></span>
+                <div class="dropdown-content">
+                    <a href="https://mimkitty.com/mimkitty.html">mimkitty</a><br />
+                    <a href="https://mimkitty.com/projects.html">projects</a><br />
+                    <a href="https://mimkitty.com/portfolio.html">portfolio</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span><a href="https://mimkitty.com/404.html">404</a></span>
+                <div class="dropdown-content">
+                    <a href="https://mimkitty.com/404.html">404</a><br />
+                    <a href="https://mimkitty.com/404.html">404</a>
+                </div>
+            </div>
 
-        <img id="window" src="https://i.imgur.com/7uxGxhk.png" align="middle" />
-        <div id="nav">
-            <a href="index.html" class="button">home</a>
-            <a href="portfolio.html" class="button">portfolio</a>
-            <a href="mimmy.html" class="button">about</a>
-            <a href="diary.html" class="button">diary</a>
-     
+            <a href="https://mimkitty.com/404.html"> recc</a>
         </div>
-        <img id="smallwindow" src="https://i.imgur.com/ivlzIt1.png" />
-        <div id="smallcontent">
+            <div id="content">
+              
+                
+                <p style="text-align:center;">
+              <div id="mission"> 
+              <p>welcome to miriam's little corner of the world
+<br><br>lyrics, prose, poetry and more posted every sunday starting 5/7/2023 <br><br>
+                this site is a work in progress. my apologies if it looks strange on mobile, has missing pages, or anything else. i am slowly updating it over time!
 
-            <div id="status">
-                <u style="text-decoration-style:dotted;"> status :</u>   ill ૮꒰ .·´ ˆ·' ꒱ა < <br />
-                <u style="text-decoration-style:dotted;">working on :</u>   video editing <br />
-                <u style="text-decoration-style:dotted;"> last update :</u> <a href="magick.html">magick </a> <br />
-                <u style="text-decoration-style:dotted;"> ♡ thank you</u>
-            </div>  <br />
-            <p>my button :</p>
-            <a href="https://mimkitty.com"><img src="https://i.imgur.com/s9RlO3L.gif" /></a>
+                
+                
+           
+          
+                <img src="">
+                <br><br>
+                <img src="https://imgur.com/W4TyADu.gif">
 
+              </div>
 
-        </div>
-        <div id="mcontent">
-            <div id="blurb">
-                <img src="https://i.imgur.com/pqjEhT8.png" width="80%" />
-                <!-- 240 x 320 -->
-                <div id="blurbContent">
+               
+                <!--  -->
+               
+
+                  
+                           
                    
-                    <p>my inspiration :</p>
-                    <a href="https://middlepot.com"><img src="https://middlepot.com/button.png"></a>
-                    <br /><br />
+                    
+
+                </div>
+
+                
+                    
+
+       
+
 
 
                 </div>
 
 
             </div>
-
-
-            <div id="wordsBig">
-                
-                <p>
-                    welcome to my virtual blankie fort . . .
-                    ♡
-
-                    <br />
-                    here you will see my dreams . . . my wishes . . .
-                    ♡ <br />
-                    and my attempts to fulfill them . . .
-                    ♡ <br />
-                    enter the fort . . . under the quilt . . .
-                    ♡ <br />
-                    and explore !
-                </p>
-
-                <img src="https://i.imgur.com/EZR5bTL.png" width="40%" />
-                <p>
-                    my purpose for creating is to express myself <br />
-                    and heal . . . i wish to bring healing, loving energy into the world <br />
-                    with what i create . . . to soothe others and myself . . . <br />
-                    to bring comfort and love to everyone . . . <br />
-                </p>
-
-            </div>
         </div>
 
-        <div id="cr">
-            <marquee>
-                ୨୧ mimkitty ୨୧ thank you ♡ 
-            </marquee> 
+
+
+
+       
         </div>
+        <div class="sidebox" id="latest">
+            <h1 style="font-size:20px;">updates</h1><br />
+            status ♡  <br /><br />
+            last post ♡ n/a<br /><br />
+            currently working on ♡ many projects
 
-        
-    </div>
+        </div>
+        <div class="sidebox" id="anon">
+            <h1 style="font-size:20px;">archive</h1><br />
+            <button class="collapsible">2023</button>
+<div class="months">
+<div class="collapsible"><p>may</p></div><div class="articles">
+<br>
+<br>  
+</div>
+<div class="collapsible"><p>june</p></div><div class="articles"><p>hihihi</p></div>
+<div class="collapsible"><p>july</p></div><div class="articles"><p>hihihi</p></div>
+<div class="collapsible"><p>august</p></div><div class="articles"><p>hihihi</p></div>
+<div class="collapsible"><p>september</p></div><div class="articles"><p>hihihi</p></div>
+<div class="collapsible"><p>october</p></div><div class="articles"><p>hihihi</p></div>
+<div class="collapsible"><p>november</p></div><div class="articles"><p>hihihi</p></div>
+<div class="collapsible"><p>december</p></div><div class="articles"><p>hihihi</p></div>
+</div>
+          <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 </body>
 </html>
