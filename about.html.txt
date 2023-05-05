@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="miriam bow">
+<meta name="keywords" content="music,poetry,miriam-bow,mimkitty">
+<meta name="description" content="the online world of miriam bow: rxplore her lyrics, music, poetry & prose">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonbon&display=swap" rel="stylesheet">
+<link href="https://raw.githubusercontent.com/mimkitty/mimkitty.github.io/blob/main/stylesheet.css" rel="stylesheet">
+    <title>mimkitty / miriam bow</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@800&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        @media screen and (max-width: 1000px) and (orientation: portrait) {
+            #container {
+                position: absolute;
+                zoom: 200%;
+                left: -460px;
+                top: 200px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) and (orientation: landscape) {
+            #container {
+                position: absolute;
+                zoom: 57%;
+                left: -190px;
+                top: 10px;
+            }
+        }
+@font-face {
+    font-family: 'home_sweet_homeregular';
+    src: url('https://raw.githubusercontent.com/mimkitty/mimkitty.github.io/blob/main/home_sweet_home-webfont.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/mimkitty/mimkitty.github.io/blob/main/home_sweet_home-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+ background-image: url("https://imgur.com/fL6LWK4.gif"); 
+  background-size: 10%;
+   font-family: 'Verdana', italic;
+            
+            color: #EED5D8;
+  font-size:11px;
+}
+
+
+h1 {
+  font-family: 'Bonbon', cursive;
+  font-size : 50px;
+  color: #FFC9D4;
+  font-weight:normal;
+  font-style:normal;
+}
+#content {
+  border: 40px solid;
+  border-image: url("https://imgur.com/UykPKBS.png") 30 repeat; 
+ border-image-outset: 30px;
+  background-color: #FCFBF7;
+  padding: 15px;
+  height: 750px;
+}
+
+#mission {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url("https://imgur.com/rOHr3sN.png") 30 repeat;
+}
+.collapsible {
+  background-color: #FFECF0;
+  color: #C3AFA3;
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 12px;
+  font-family: Verdana;
+  
+}
+
+.active, .collapsible:hover {
+  background-color: #fff;
+}
+
+.collapsible:after {
+  content: '\25B8';
+  color: #000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  color:#FFC9D4;
+}
+
+.active:after {
+  content: "\25BE";
+  color:#FFC9D4;
+}
+
+.months {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #FFECF0;
+  color:#FFC9D4;
+}
+.articles {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #FFECF0;
+  color:#FFC9D4;
+}
+
+#paw {
+  position:absolute;
+  margin:0;
+  left:550px;
+
+}
+     
+
+        #bg {
+          background-color:#FAF4E8 ;
+            position: absolute;
+            margin: auto;
+            width: 760px;
+            
+            position: absolute;
+            
+            left: 295px;
+            top: 100px;
+            
+        }
+
+        .nav {
+            position: absolute;
+            left: 295px;
+            top: 25px;
+            z-index: 98;
+        }
+
+        
+
+        #playlists {
+            left: 1065px;
+            position: absolute;
+            top: 100px;
+        }
+
+        a:link {
+            color: #C3AFA3;
+            text-decoration: underline dotted  #EED5D8 1px;
+        }
+
+        a:hover {
+            color: #FFA9CF;
+            text-decoration: dotted 1px;
+        }
+
+        a:visited {
+            color: #C3AFA3;
+            text-decoration: dotted 2px;
+        }
+
+        ::selection {
+            text-shadow: #FDA2DA 1px 0 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #F4CCCA;
+            border-radius: 0px;
+            background: #FFF8F4;
+        }
+
+
+        ::-webkit-scrollbar-thumb {
+            background: #EDB2CC;
+            border-radius: 10px;
+        }
+
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #FFA9CF;
+            }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          
+        }
+
+        .row img {
+            width: 250px;
+            height: 250px;
+        }
+
+  
+
+        #latest {
+            top: 100px;
+            position: absolute;
+        }
+
+        #anon {
+            top: 335px;
+            position: absolute;
+        }
+
+        .sidebox {
+            position: absolute;
+            font-size: 12px;
+            margin: auto;
+            width: 230px;
+            height: 525px;
+            position: absolute;
+            background-color: #FFECF0;
+            padding: 10px 10px 10px 10px;
+            left: 55px;
+          background-image: 
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #F9F2EF;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .tooltip {
+            position:relative;
+            display: inline-block;
+        }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 84px;
+                font-size:9px;
+                background-color: #FFF8F4;
+                color: #7d5661;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                border: 2px dotted #7d5661;
+                position: absolute;
+                z-index: 99;
+                top:20px;
+                left:10%;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+    </style>
+
+ 
+    <script>
+    
+
+        
+    </script>
+</head>
+
+
+<body>
+   
+  <div id="container"><div id="paw">
+    <h1>miriam bow</h1> 
+         </div>
+        
+
+        <div id="bg">
+          <div class="nav">
+            <a href="https://mimkitty.com/index.html">home</a>
+            <a href="https://mimkitty.com/blog.html">blog</a>
+            <div class="dropdown">
+                <span><a href="https://mimkitty.com/about.html">about</a></span>
+                <div class="dropdown-content">
+                    <a href="https://mimkitty.com/mimkitty.html">mimkitty</a><br />
+                    <a href="https://mimkitty.com/projects.html">projects</a><br />
+                    <a href="https://mimkitty.com/portfolio.html">portfolio</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span><a href="https://mimkitty.com/404.html">404</a></span>
+                <div class="dropdown-content">
+                    <a href="https://mimkitty.com/404.html">404</a><br />
+                    <a href="https://mimkitty.com/404.html">404</a>
+                </div>
+            </div>
+
+            <a href="https://mimkitty.com/404.html"> recc</a>
+        </div>
+            <div id="content">
+              
+                
+                <p style="text-align:center;">
+              <div id="mission"> 
+              <p>
+mimkitty is a project by miriam bow meant to promote peace, healing, creativity, and relaxation through memory, nostalgia, comfort, & convalescense.<br>
+underneath the primary mimkitty project (conceived 2020) are several mini-projects and pseudonyms, such as “m. lovejoy”, “mymphae”, and “miriam bow”<br><br>
+
+m.lovejoy is a former pseudonym miriam went by for her work with Oneul Magazine in 2021 (see her print here) <br><br>
+
+mymphae is the pseudonym being currently used for some literary projects <br><br>
+
+miriam bow is the pseudonym for the person behind mimkitty and its projects, as well as used for musical and poetic works. <br><br>
+
+miriam and her projects are not currently touring, nor does she have a consistent, posted performance schedule. live performance, digital and physical, may be considered in the future. <br><br>
+
+all music is made within the comfort of miriam’s home, and is written, composed, performed, and produced by miriam, with the help of friends and family. <br><br>
+
+all profits will be going to the livelihoods of miriam and her family, as well as to improve the quality and quantity of her artistry. <br><br>
+
+
+                
+                
+           
+          
+                <img src="">
+                <br><br>
+                <img src="https://imgur.com/W4TyADu.gif">
+
+              </div>
+
+               
+                <!--  -->
+               
+
+                  
+                           
+                   
+                    
+
+                </div>
+
+                
+                    
+
+       
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+       
+        </div>
+        <div class="sidebox" id="latest">
+            <h1 style="font-size:20px;">updates</h1><br />
+            status ♡  <br /><br />
+            last post ♡ n/a<br /><br />
+            currently working on ♡ many projects
+
+        </div>
+        <div class="sidebox" id="anon">
+            <h1 style="font-size:20px;">archive</h1><br />
+            <button class="collapsible">2023</button>
+<div class="months">
+<div class="collapsible"><p>may</p></div><div class="articles">
+<br>
+<br>  
+</div>
+<div class="collapsible"><p>june</p></div><div class="articles"><p>hihihi</p></div>
+<div class="collapsible"><p>july</p></div><div class="articles"><p>hihihi</p></div>
+<div class="collapsible"><p>august</p></div><div class="articles"><p>hihihi</p></div>
+<div class="collapsible"><p>september</p></div><div class="articles"><p>hihihi</p></div>
+<div class="collapsible"><p>october</p></div><div class="articles"><p>hihihi</p></div>
+<div class="collapsible"><p>november</p></div><div class="articles"><p>hihihi</p></div>
+<div class="collapsible"><p>december</p></div><div class="articles"><p>hihihi</p></div>
+</div>
+          <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</body>
+</html>
